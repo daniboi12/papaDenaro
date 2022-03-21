@@ -42,7 +42,7 @@ struct PressableButton: View {
             if showDetails{
                 Text("You Pressed The Button!")
             }
-            Button("Press"){
+            Button(name){
                 showDetails.toggle()
             }
             

@@ -11,6 +11,7 @@
 		14ED1BAD27E8A2B500F5EC48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED1BAC27E8A2B500F5EC48 /* ContentView.swift */; };
 		14ED1BAF27E8A2B500F5EC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ED1BAE27E8A2B500F5EC48 /* Assets.xcassets */; };
 		14ED1BB227E8A2B500F5EC48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ED1BB127E8A2B500F5EC48 /* Preview Assets.xcassets */; };
+		70E4948327E8A6530068557F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4948227E8A6530068557F /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		14ED1BAC27E8A2B500F5EC48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14ED1BAE27E8A2B500F5EC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14ED1BB127E8A2B500F5EC48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70E4948227E8A6530068557F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				14ED1BAA27E8A2B500F5EC48 /* PapaDeneroV2App.swift */,
+				70E4948227E8A6530068557F /* LoginView.swift */,
 				14ED1BAC27E8A2B500F5EC48 /* ContentView.swift */,
 				14ED1BAE27E8A2B500F5EC48 /* Assets.xcassets */,
 				14ED1BB027E8A2B500F5EC48 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E4948327E8A6530068557F /* LoginView.swift in Sources */,
 				14ED1BAD27E8A2B500F5EC48 /* ContentView.swift in Sources */,
 				14ED1BAB27E8A2B500F5EC48 /* PapaDeneroV2App.swift in Sources */,
 			);
@@ -269,6 +273,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PapaDeneroV2/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GTA22Z5XC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -276,12 +281,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.PapaDeneroV2;
+				PRODUCT_BUNDLE_IDENTIFIER = papapapapappappapapapapapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -297,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PapaDeneroV2/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GTA22Z5XC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,12 +311,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.PapaDeneroV2;
+				PRODUCT_BUNDLE_IDENTIFIER = papapapapappappapapapapapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

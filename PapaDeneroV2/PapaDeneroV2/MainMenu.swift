@@ -9,19 +9,25 @@ import SwiftUI
 
 struct MainMenu: View {
     var body: some View {
-        NavigationView{
-            List{
-                Section("Foods"){
-                    PressableButton(name: "Pizzas")
-                    PressableButton(name: "Bar Snacks")
-                    PressableButton(name: "Steaks")
+        
+        VStack{
+            Text("Papa Denero's Restraunt").bold()
+            NavigationView{
+                List{
+                    Section("Foods"){
+                        NavButton(title: "Pizzas", destination: AnyView(MainMenu()))
+                        NavButton(title: "Pastas", destination: AnyView(LoginView()))
+                        NavButton(title: "Bar Snacks", destination: AnyView(LoginView()))
+                        NavButton(title: "Steaks", destination: AnyView(LoginView()))
+                        
+                    }
+                    Section("Drinks"){
+                        NavButton(title: "Soft Drinks", destination: AnyView(LoginView()))
+                        NavButton(title: "Cocktails", destination: AnyView(LoginView()))
+                        NavButton(title: "Ales", destination: AnyView(LoginView()))
+                    }
                 }
-                Section("Drinks"){
-                    PressableButton(name: "Soft Drinks")
-                    PressableButton(name: "Cocktails")
-                    PressableButton(name: "Ales")
-                }
-            }
+            }.navigationTitle("Menu")
         }
     }
 }
@@ -32,27 +38,25 @@ struct MainMenu_Previews: PreviewProvider {
     }
 }
 
-struct PressableButton: View {
-    @State private var showDetails = false
-    let name: String
+struct NavButton: View {
+    public var title: String
+    public var destination: AnyView
+    //public var view: View
     
     var body: some View {
-        VStack(alignment: .leading){
-            
-            if showDetails{
-                Text("You Pressed The Button!")
+        VStack {
+            NavigationLink(destination: destination) {
+                Text(title)
             }
-            Button(name){
-                showDetails.toggle()
-            }
-            
-            
+            .navigationTitle("Menu")
         }
     }
 }
 
-struct PressableButton_Previews: PreviewProvider {
+struct NavButton_Previews: PreviewProvider {
     static var previews: some View {
-        PressableButton(name: "")
+        NavButton(title: "Title", destination: AnyView(LoginView()))
     }
 }
+
+

@@ -15,16 +15,16 @@ struct MainMenu: View {
             NavigationView{
                 List{
                     Section("Foods"){
-                        NavButton(title: "Pizzas", destination: AnyView(MainMenu()))
-                        NavButton(title: "Pastas", destination: AnyView(LoginView()))
-                        NavButton(title: "Bar Snacks", destination: AnyView(LoginView()))
-                        NavButton(title: "Steaks", destination: AnyView(LoginView()))
+                        NavButton(title: "🍕 Pizzas", destination: AnyView(MainMenu()))
+                        NavButton(title: "🍝 Pastas", destination: AnyView(LoginView()))
+                        NavButton(title: "🍔 Bar Snacks", destination: AnyView(LoginView()))
+                        NavButton(title: "🥩 Steaks", destination: AnyView(LoginView()))
                         
                     }
                     Section("Drinks"){
-                        NavButton(title: "Soft Drinks", destination: AnyView(LoginView()))
-                        NavButton(title: "Cocktails", destination: AnyView(LoginView()))
-                        NavButton(title: "Ales", destination: AnyView(LoginView()))
+                        NavButton(title: "🥤 Soft Drinks", destination: AnyView(LoginView()))
+                        NavButton(title: "🍸 Cocktails", destination: AnyView(LoginView()))
+                        NavButton(title: "🍺 Ales", destination: AnyView(LoginView()))
                     }
                 }
             }.navigationTitle("Menu")

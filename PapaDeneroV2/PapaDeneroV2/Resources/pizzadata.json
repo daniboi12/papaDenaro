@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Margherita",
+        "category": "Vegetarian",
+        "type": "A basic Margherita Pizza",
+        "ingredients" : ["Mozzarella","Tomato","Pizza dough"],
+        "description": "A plain basic pizza with Mozzarella cheese and tomato sauce",
+        "imageName": "margherita"
+    },
+    {
+        "name": "Pepperoni",
+        "category": "Classic",
+        "type": "A basic Pepperoni Pizza",
+        "ingredients" : ["Pepperoni","Mozzarella","Tomato","Pizza dough"],
+        "description": "A plain basic pizza with Pepperoni pepperoni, cheese and tomato sauce",
+        "imageName": "pepperoni"
+    }
+]

@@ -15,7 +15,7 @@ struct MainMenu: View {
             NavigationView{
                 List{
                     Section("Foods"){
-                        NavButton(title: "🍕 Pizzas", destination: AnyView(MainMenu()))
+                        NavButton(title: "🍕 Pizzas", destination: AnyView(PizzaList()))
                         NavButton(title: "🍝 Pastas", destination: AnyView(LoginView()))
                         NavButton(title: "🍔 Bar Snacks", destination: AnyView(LoginView()))
                         NavButton(title: "🥩 Steaks", destination: AnyView(LoginView()))

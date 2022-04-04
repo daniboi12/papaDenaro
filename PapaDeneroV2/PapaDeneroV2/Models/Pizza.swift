@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Pizza: Hashable, Codable {
+struct Pizza: Hashable, Codable,Identifiable {
+    var id: Int
     var name: String
     var category: String
     var type: String

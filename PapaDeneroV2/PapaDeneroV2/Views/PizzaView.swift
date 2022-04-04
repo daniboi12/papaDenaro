@@ -8,34 +8,27 @@
 import SwiftUI
 
 struct PizzaView: View {
+    var pizza : Pizza
     var body: some View {
         VStack {
-            PizzaImage()
+            PizzaImage(image:pizza.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading){
                 
-                Text("Margherita").font(.title)
+                Text(pizza.name).font(.title)
                 HStack{
-                    Text("A basic Margherita Pizza")
+                    Text(pizza.description)
                         .font(.subheadline)
                     Spacer()
-                    Text("Vegetarian")
+                    Text(pizza.category)
                         .font(.subheadline)
                         .foregroundColor(.green)
                     
                     
                 }
                 Divider()
-                Text("Ingredients").font(.title2)
-                VStack(alignment:.leading)
-                {
-                    Text("Mozzarella").font(.subheadline)
-                    Text("Tomato").font(.subheadline)
-                    Text("Pizza dough").font(.subheadline)
-                }
-                
             }
         }
     }
@@ -43,6 +36,6 @@ struct PizzaView: View {
 
 struct PizzaView_Previews: PreviewProvider {
     static var previews: some View {
-        PizzaView()
+        PizzaView(pizza: pizzas[0])
     }
 }

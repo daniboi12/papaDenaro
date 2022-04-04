@@ -10,12 +10,22 @@ import SwiftUI
 struct PizzaRow: View {
     var pizza : Pizza
     var body: some View {
-        Text(pizza.name)
+        HStack {
+            pizza.image
+                .resizable()
+                .frame(width: 50, height: 50)
+            Text(pizza.name)
+            Spacer()
+        }
     }
 }
 
 struct PizzaRow_Previews: PreviewProvider {
     static var previews: some View {
-        PizzaRow(pizza:pizzas[0])
+        Group
+        {
+            PizzaRow(pizza:pizzas[0])
+            PizzaRow(pizza:pizzas[1])
+        }                .previewLayout(.fixed(width: 300, height: 70))
     }
 }

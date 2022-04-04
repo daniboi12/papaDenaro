@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "name": "Margherita",
         "category": "Vegetarian",
         "type": "A basic Margherita Pizza",
@@ -8,6 +9,7 @@
         "imageName": "margherita"
     },
     {
+        "id":2,
         "name": "Pepperoni",
         "category": "Classic",
         "type": "A basic Pepperoni Pizza",
